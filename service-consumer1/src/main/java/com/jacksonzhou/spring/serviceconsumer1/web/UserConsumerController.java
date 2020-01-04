@@ -19,12 +19,12 @@ public class UserConsumerController {
 
     @Bean
     @LoadBalanced
-    public RestTemplate restTemplate(){
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
     @RequestMapping("/getUser")
-    public String getUser(){
+    public String getUser() {
         ResponseEntity<Map> responseEntity = restTemplate.getForEntity("http://service-provide1/getUserInfor", Map.class);
         System.out.println("responseEntity" + responseEntity.toString());
         return "hello,I am consumer,nice to meet you!";

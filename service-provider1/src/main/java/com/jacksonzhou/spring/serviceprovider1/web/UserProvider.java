@@ -12,7 +12,8 @@ public class UserProvider {
 
     @GetMapping("/getUserInfor")
     @ResponseBody
-    public Map<String, Object> getUserInfor(){
+    public Map<String, Object> getUserInfor() {
+        System.out.println("=====serviceInstance1=====");
         Map<String, Object> userMap = new HashMap<>();
         userMap.put("name", "jackson");
         userMap.put("mobile", "13588294068");
