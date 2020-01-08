@@ -6,4 +6,4 @@ eureka:
       defaultZone: http://127.0.0.1:8081/eureka/
 spring:
   application:
-    name: service-provide1  #服务名称--调用的时候通过该名称来调用服务
+    name: service-provide  #服务名称--调用的时候通过该名称来调用服务

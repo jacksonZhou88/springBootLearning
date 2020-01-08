@@ -7,3 +7,5 @@ eureka:
 spring:
   application:
     name: service-consumer1
+logging:
+  config:log4j2.xml
