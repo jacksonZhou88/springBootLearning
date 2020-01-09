@@ -23,7 +23,7 @@ public class UserConsumerController {
     public String getUser() {
         ResponseEntity<Map> responseEntity = restTemplate.getForEntity("http://service-provide/getUserInfor", Map.class);
         Map<String, Object> resultMap = responseEntity.getBody();
-        return "hello,I am consumer,nice to meet you! I'm instance "+ resultMap.get("instanceId");
+        return "hello,I am consumer,nice to meet you! I'm instance " + resultMap.get("instanceId");
     }
 
 
@@ -33,19 +33,19 @@ public class UserConsumerController {
     }
 
     /**
-    *<p>功能描述：getUser2 断路器功能</p>
-    *<ul>
-    *<li>@param []</li>
-    *<li>@return java.lang.String</li>
-    *<li>@throws </li>
-    *<li>@author My</li>
-    *<li>@date 2020/1/4 19:07</li>
-    *</ul>
-    */
+     * <p>功能描述：getUser2 断路器功能</p>
+     * <ul>
+     * <li>@param []</li>
+     * <li>@return java.lang.String</li>
+     * <li>@throws </li>
+     * <li>@author My</li>
+     * <li>@date 2020/1/4 19:07</li>
+     * </ul>
+     */
     @RequestMapping("/getUserApi")
     public String getUserApi() {
         Map<String, Object> userMap = userConsumerService.getUser2();
-        return "hello,I am consumer,nice to meet you! I'm instance "+ userMap.get("instanceId");
+        return "hello,I am consumer,nice to meet you! I'm instance " + userMap.get("instanceId");
     }
 
 }

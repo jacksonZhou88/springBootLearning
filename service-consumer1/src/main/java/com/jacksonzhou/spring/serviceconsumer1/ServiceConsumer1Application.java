@@ -19,7 +19,7 @@ public class ServiceConsumer1Application {
 
     @Bean
     @LoadBalanced
-    RestTemplate RestTemplate(){
+    RestTemplate RestTemplate() {
         return new RestTemplate();
     }
 

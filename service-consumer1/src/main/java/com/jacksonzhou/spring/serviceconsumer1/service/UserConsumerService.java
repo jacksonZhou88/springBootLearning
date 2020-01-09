@@ -14,15 +14,15 @@ public class UserConsumerService {
     RestTemplate restTemplate;
 
     /**
-    *<p>功能描述：getUser2 消费者消费</p>
-    *<ul>
-    *<li>@param []</li>
-    *<li>@return java.lang.String</li>
-    *<li>@throws </li>
-    *<li>@author My</li>
-    *<li>@date 2020/1/4 19:10</li>
-    *</ul>
-    */
+     * <p>功能描述：getUser2 消费者消费</p>
+     * <ul>
+     * <li>@param []</li>
+     * <li>@return java.lang.String</li>
+     * <li>@throws </li>
+     * <li>@author My</li>
+     * <li>@date 2020/1/4 19:10</li>
+     * </ul>
+     */
     public Map<String, Object> getUser2() {
         ResponseEntity<Map> responseEntity = restTemplate.getForEntity("http://service-provide/getUserInfor", Map.class);
         Map<String, Object> resultMap = responseEntity.getBody();

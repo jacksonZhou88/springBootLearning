@@ -13,7 +13,7 @@ import java.util.Random;
 @RestController
 public class UserProvider {
 
-    private static final Logger log = LoggerFactory.getLogger(UserProvider. class);
+    private static final Logger log = LoggerFactory.getLogger(UserProvider.class);
 
     @GetMapping("/getUserInfor")
     @ResponseBody
