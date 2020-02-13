@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 @RestController
 public class UserProvider {
@@ -24,14 +23,14 @@ public class UserProvider {
         userMap.put("mobile", "13588294068");
         userMap.put("address", "浙江省杭州市西湖区");
         userMap.put("instanceId", "instance2");
-        int sleepTime = new Random().nextInt(5000);
-        try {
-            Thread.sleep(sleepTime);
-            log.info("sleepTime: " + sleepTime);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            return null;
-        }
+//        int sleepTime = new Random().nextInt(5000);
+//        try {
+//            Thread.sleep(sleepTime);
+//            log.info("sleepTime: " + sleepTime);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
 
         return userMap;
     }

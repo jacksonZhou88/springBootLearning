@@ -1,6 +1,6 @@
-package com.jacksonzhou.spring.serviceconsumer1.web;
+package com.jacksonzhou.spring.commonUtils.web;
 
-import com.jacksonzhou.spring.serviceconsumer1.util.CommonInterface;
+import com.jacksonzhou.spring.commonUtils.util.CommonInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;

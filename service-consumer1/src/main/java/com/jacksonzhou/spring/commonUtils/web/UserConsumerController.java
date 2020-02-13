@@ -1,6 +1,6 @@
-package com.jacksonzhou.spring.serviceconsumer1.web;
+package com.jacksonzhou.spring.commonUtils.web;
 
-import com.jacksonzhou.spring.serviceconsumer1.service.UserConsumerService;
+import com.jacksonzhou.spring.commonUtils.service.UserConsumerService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.jacksonzhou.spring.serviceconsumer1.service;
+package com.jacksonzhou.spring.commonUtils.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

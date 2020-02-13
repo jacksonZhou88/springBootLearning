@@ -1,4 +1,4 @@
-package com.jacksonzhou.spring.serviceconsumer1;
+package com.jacksonzhou.spring.commonUtils;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

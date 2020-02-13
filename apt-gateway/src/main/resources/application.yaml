@@ -1,0 +1,19 @@
+server:
+  port: 5555
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8081/eureka/
+spring:
+  application:
+    name: api-gateway  #服务名称--调用的时候通过该名称来调用服务
+
+zuul:
+  routes:
+    serverProvide:
+      path: /serverProvide/**
+      serviceId: service-provide
+    serviceConsumer:
+      path: /serviceConsumer/**
+      serviceId: service-consumer1
+
