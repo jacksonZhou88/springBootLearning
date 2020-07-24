@@ -1,15 +1,15 @@
-package com.jacksonzhou.spring.serviceprovider1;
+package com.jacksonzhou.spring.serviceprovider2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication
 @EnableDiscoveryClient
-public class ServiceProvider1Application {
+@SpringBootApplication
+public class ServiceProvider2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceProvider1Application.class, args);
+        SpringApplication.run(ServiceProvider2Application.class, args);
     }
 
 }
