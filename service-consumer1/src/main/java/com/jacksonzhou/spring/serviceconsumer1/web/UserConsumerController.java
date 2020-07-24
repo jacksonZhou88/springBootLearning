@@ -30,4 +30,8 @@ public class UserConsumerController {
         return "hello,I am consumer,nice to meet you!";
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }
